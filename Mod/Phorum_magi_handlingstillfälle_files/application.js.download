@@ -1,0 +1,60 @@
+function $(elm) { return document.getElementById(elm); } 
+
+function forumRedirect(url) {
+	W.redirect(url);
+}
+
+String.prototype.strip = function() {
+	return this.replace(/^\s+/, '').replace(/\s+$/, '');
+}
+
+function toggleDisplays(elms, options) {
+	for (var i = 0; i < elms.length; i++) {
+		toggleDisplay(elms[i], options);
+	}
+}
+
+function toggleDisplay(elm_id, options) {
+  elm = $(elm_id);
+  var none = elm.style.display == "none";
+  if (none && options.offText) {
+    options.elm.innerHTML = options.offText;
+  }
+  else if (!none && options.onText) {
+    options.elm.innerHTML = options.onText;
+  }
+  elm.style.display = none ? "": "none";
+}
+
+var Category = {
+
+	goWithId: function(url) {
+		forumRedirect(url.substring(1, url.length) + '/' + Category.cbId);
+	},
+	
+	move: function(url) {
+		Category.setCbId();
+		Category.goWithId(url);
+	},
+
+	remove: function(url) {
+		Category.setCbId();
+		if (confirm('Are you sure you want permanently remove this category?  You will lose ALL forums and ALL posts in this category.')) {
+			Category.goWithId(url);
+		}
+	},
+
+	addForum: function(url) {
+		Category.setCbId();
+		Category.goWithId(url);
+	},
+
+	edit: function(url) {
+		Category.setCbId();
+		Category.goWithId(url);
+	},
+
+	setCbId: function() {
+		Category.cbId = fwGetContextBar('categoriesContextBar').getID();
+	}
+}
