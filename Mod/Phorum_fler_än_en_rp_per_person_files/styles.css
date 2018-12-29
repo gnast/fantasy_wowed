@@ -1,0 +1,258 @@
+div.fw-flash {
+	margin: 8px 0 8px 0;
+	xborder: 0;
+	padding: 10px;
+}
+
+form { margin: 0; }
+.center		{ text-align: center; }
+.right		{ text-align: right; }
+.middle		{ vertical-align: middle; }
+.bold		{ font-weight: bold; }
+.smallText	{ font-size: 0.9em; }
+.lightText	{
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+	zoom: 1; /* IE fix for opacity ??????? */
+}
+
+.top-border {
+	background: transparent;
+	border-top-width: 1px;
+	border-top-style: solid;
+}
+
+.postDescription p { margin: 0 }
+
+div.hr {
+	display: block;
+	height: 1px;
+	line-height: 1px;
+	font: 0;
+	border: 0;
+	margin: 3px 0 3px 0;
+}
+
+.clear {
+	clear: both;
+	line-height: 0;
+}
+
+table.categoryDisplay {
+	width: 100%;
+	text-align: left;
+}
+
+tr.header {
+	xbackground-color: #eee;
+}
+
+tr.header th {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	padding: 5px;
+}
+
+table.categoryDisplay th.name {
+	text-align: left;
+	font-size: 1.2em;
+}
+
+h4.forumName {
+	margin: 0;
+	font-size: 1em;
+}
+
+.forumDetail {
+	font-weight: bold;
+	font-size: 1.1em;
+	text-align: center;
+}
+
+.forumLastPost {
+	padding-right: 15px !important;
+	text-align: right;
+	font-size: 0.9em;
+}
+
+td.forumTitleDescription {
+	padding-left: 5px;
+	font-size: 0.9em;
+}
+
+td.forumTitleDescription p {
+	margin-top: 0;
+}
+
+table.forumDisplay, table#topicDisplayHeader, table#topicDisplay, table#searchDisplay {
+	width: 100%;
+}
+
+table.forumDisplay, table#topicDisplay {
+}
+
+table#searchDisplay {
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: dotted;
+	border-bottom-style: dotted;
+	background-color: transparent;
+	margin: 5px 0 10px 0;
+}
+
+table#searchDisplay td {
+	padding: 3px 1px 2px 1px;
+}
+
+table.forumDisplay th.name {
+	width: 65%;
+}
+
+td.profilePic {
+	width: 90px;
+	padding: 7px;
+}
+
+table#postQuickReply {
+	width: 100%;
+	border-style: solid;
+	border-width: 1px;
+	background-color: transparent;
+	border-right-width: 0;
+	border-left-width: 0;
+	xborder-top-width: 0;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+blockquote.quoteBlock {
+	padding: 5px 5px 5px 63px !important;
+	margin: 0 0 10px 20px;
+	width: 80%;
+	border-width: 1px;
+	border-style: solid;
+	border-left-width: 3px;
+	font-size: 0.9em;
+}
+
+blockquote.quoteBlock h4 {
+	font-style: italic;
+	margin: 0;
+	font-size: 1em;
+}
+
+blockquote.quoteBlock p {
+	margin-top: 5px;
+}
+
+table#footer {
+	width: 100%;
+	border-top-width: 1px;
+	border-top-style: solid;
+	background-color: transparent;
+	font-size: 0.9em;
+}
+
+span.linkButton {
+	background: transparent;
+	padding: 5px 3px 5px 3px;
+	margin-left: 5px;
+}
+
+.paddingRow td {
+	padding: 4px 0 4px 0;
+}
+
+td.topicIcon {
+	width: 22px;
+	padding: 0 10px 0 15px;
+}
+
+.pagination {
+	font-weight: bold;
+	padding-top: 5px;
+	font-size: 1.2em;
+}
+
+div.topicTitle {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.mainDisplay {
+	width: 100%;
+}
+
+th.lastUpdated {
+	text-align: right;
+	padding-right: 10px !important;
+	padding-left: 30px !important;
+}
+
+td.postDescription {
+	padding-top: 5px;
+}
+
+.iconBg {
+	background-repeat: no-repeat;
+	background-position: center left;
+	background-color: transparent;
+	padding: 2px 6px 0 19px;
+}
+
+.forumNameLock {
+	background-image: url(https://images.freewebs.com/Images/Silk/lock.png);
+}
+
+.deleteIcon {
+	background-image: url(https://images.freewebs.com/Images/Silk/delete.png);
+}
+
+.flagIcon {
+	background-image: url(https://images.freewebs.com/Images/Silk/flag_red.png);
+}
+
+.quoteAndReplyIcon {
+	background-image: url(https://images.freewebs.com/Images/Silk/comment_edit.png);
+}
+
+.editIcon {
+	background-image: url(https://images.freewebs.com/Images/Silk/page_white_edit.png);
+}
+
+div.formFields p {
+	margin-left: 10px;
+}
+
+.topic-title-truncate {
+	float:left;
+	max-width:380px;
+	overflow:hidden;
+}
+.topic-page-title-truncate {
+	float:left;
+	max-width:600px;
+	overflow:hidden;
+}
+
+.overflow_truncate {
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.profile_name_post {
+  width:90px;
+}
+
+.profile_name_topic {
+  width:200px;
+  float:right;
+  margin-left:4px;
+}
+
+.profile_name_topic_last {
+  width:100px;
+}
+
+

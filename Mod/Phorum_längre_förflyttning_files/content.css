@@ -1,0 +1,6 @@
+/* Area CSS */
+
+body, td { margin: 0; padding: 0; background: #FFF; font-family: Arial; font-size: 12px; }
+a { color: blue !important; } /* FF needs important */
+
+body { padding: 3px; }
